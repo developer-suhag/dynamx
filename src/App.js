@@ -1,14 +1,13 @@
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/700.css";
 import "@fontsource/roboto/400.css";
-import {
-  Button,
-  createTheme,
-  CssBaseline,
-  ThemeProvider,
-  Typography,
-} from "@mui/material";
+import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import About from "./Pages/About/About/About";
+import Blog from "./Pages/Blog/Blog/Blog";
+import Home from "./Pages/Home/Home";
+import Services from "./Pages/Services/Services/Services";
 
 const theme = createTheme({
   palette: {
@@ -33,12 +32,28 @@ function App() {
     <CssBaseline>
       <div className="App">
         <ThemeProvider theme={theme}>
-          <Typography variant="h2" sx={{ color: "#00FFFF" }}>
-            Dynamx a web startup
-          </Typography>
-          <Button variant="outlined" color="secondary">
-            Click me
-          </Button>
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home></Home>
+              </Route>
+              <Route exact path="/home">
+                <Home></Home>
+              </Route>
+              <Route exact path="/services">
+                <Services></Services>
+              </Route>
+              <Route exact path="/blog">
+                <Blog></Blog>
+              </Route>
+              <Route exact path="/about">
+                <About></About>
+              </Route>
+              <Route exact path="/contact">
+                <About></About>
+              </Route>
+            </Switch>
+          </Router>
         </ThemeProvider>
       </div>
     </CssBaseline>
