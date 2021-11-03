@@ -1,13 +1,14 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import HappyClient from "../HappyClient/HappyClient";
 
 const Home = () => {
   return (
     <Box>
-      <Typography variant="h4" color="primary">
-        this is home
-      </Typography>
+      <br />
+      {/* happy client  */}
+      <HappyClient></HappyClient>
     </Box>
   );
 };
