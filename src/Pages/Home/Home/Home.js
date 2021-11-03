@@ -5,7 +5,9 @@ import React from "react";
 const Home = () => {
   return (
     <Box>
-      <Typography variant="h4">this is home</Typography>
+      <Typography variant="h4" color="primary">
+        this is home
+      </Typography>
     </Box>
   );
 };

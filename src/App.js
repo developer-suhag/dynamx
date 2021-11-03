@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import About from "./Pages/About/About/About";
 import Blog from "./Pages/Blog/Blog/Blog";
-import Home from "./Pages/Home/Home";
+import Home from "./Pages/Home/Home/Home";
 import Services from "./Pages/Services/Services/Services";
 
 const theme = createTheme({
