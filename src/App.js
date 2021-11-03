@@ -11,7 +11,7 @@ import Services from "./Pages/Services/Services/Services";
 
 const theme = createTheme({
   palette: {
-    // mode: "dark",
+    mode: "dark",
     primary: {
       main: "#00FFFF",
     },
